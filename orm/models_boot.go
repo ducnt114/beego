@@ -144,8 +144,8 @@ func bootStrap() {
 							i.table = fi.relTable
 						}
 						if v := modelCache.set(i.table, i); v != nil {
-							err = fmt.Errorf("the rel table name `%s` already registered, cannot be use, please change one", fi.relTable)
-							goto end
+							//err = fmt.Errorf("the rel table name `%s` already registered, cannot be use, please change one", fi.relTable)
+							//goto end
 						}
 						fi.relTable = i.table
 						fi.relThroughModelInfo = i
